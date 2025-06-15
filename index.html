@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="left">
+          <img src="book image.jpg" alt="logo" />
+        </div>
+        <div class="right">
+          <select id="fontSelect">
+            <option value="serif">Serif</option>
+            <option value="sans-serif" selected>Sans</option>
+            <option value="monospace">Mono</option>
+          </select>
+          <label class="theme-switch">
+            <input type="checkbox" id="toggleDark" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </header>
+
+      <div class="search-bar">
+        <input type="text" id="wordInput" placeholder="Enter a word..." />
+        <button onclick="searchWord()">🔍</button>
+      </div>
+
+      <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
